@@ -1,0 +1,21 @@
+<project default="compile">
+<property name ="src.java.dir" location=".//"/>
+<property name ="src.test.dir" location="./src/main/test"/>
+<property name ="result.dir" location="./target"/>
+<property name ="result.javaclasses.dir" location="${result.dir}/classes"/>
+<property name ="result.testclasses.dir" location="${result.dir}/testclasses"/>
+<property name ="result.jar.file" location="./Myproduct.jar"/>
+<target name="compile">
+            <mkdir dir ="${result.javaclasses.dir}"/>
+            <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
+            </javac>
+</target>
+<!-- comment Make jar or executable product -->
+<target name ="jar" depends ="compile">
+          <jar destfile="${result.jar.file}">
+                   <fileset dir ="${result.jar.file}">
+           </fileset>
+              </jar>
+        </target>
+
+</project>
