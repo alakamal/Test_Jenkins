@@ -1,5 +1,5 @@
 <project default="compile">
-<property name ="src.java.dir" location="./src"/>
+<property name ="src.java.dir" location="./"/>
 <property name ="src.test.dir" location="./src/main/test"/>
 <property name ="result.dir" location="./target"/>
 <property name ="result.javaclasses.dir" location="${result.dir}/classes"/>
